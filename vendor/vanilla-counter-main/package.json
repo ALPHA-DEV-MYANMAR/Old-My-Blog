@@ -1,0 +1,24 @@
+{
+  "name": "vanilla-counter",
+  "version": "1.0.3",
+  "description": "Lightweight JS library to create counters",
+  "main": "vanilla-counter.js",
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "keywords": [
+    "vanilla-counter",
+    "counter",
+    "javascript",
+    "vanillajs",
+    "vanilla",
+    "js-counter"
+  ],
+  "author": "Yunis Huseynzade <yunisdev.04@gmail.com> (http://yunisdev.github.io)",
+  "license": "MIT",
+  "homepage": "https://yunisdev.github.io/vanilla-counter/",
+  "bugs": {
+    "email": "yunisdev.04@gmail.com",
+    "url": "https://github.com/YunisDEV/vanilla-counter/issues"
+  }
+}

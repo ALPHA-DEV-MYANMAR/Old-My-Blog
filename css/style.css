@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Concert+One&family=Josefin+Sans:wght@700&display=swap');
+:root{
+    --primary: #A94DC1;
+    --light: #ffffff;
+    --dark: #434343;
+    --violat: #8B5CF6;
+    --secondary: #D1D5DB;
+    --sh: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+}
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Shippori Antique B1', 'Padauk';
+}
+
+body{
+    
+}
+
+.bold-font{
+    font-family: 'Concert One', cursive;
+}
+
+.vid-text{
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--violat);
+}
+
+.about-img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--sh);
+    filter:grayscale(100%);
+}
+
+.profile{   
+    width: 100%;
+    height: 100vh;
+}
+
+.profile-card{
+    width: 100%;
+    height: 90vh;
+    background-image: url('../img/joker.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    border: var(--dark);
+}
+
+.profile-img{
+    width: 300px;
+    height: auto;
+    filter:grayscale(100%);
+}
+
+.profile-text{
+    margin-top: 300px;
+}
+
+.profile-text span{
+    font-family: 'Lobster Two', cursive;
+}
+
+.profile-icon{
+}
+
+.profile-icon a{
+    color: var(--light);
+}
+
+.profile-icon div{
+    transition: 0.2s;
+}
+
+.profile-icon div:hover{
+    transform: scale(1.5);
+}
+
+/* Skill */
+.skill-text{
+    font-family: 'Lobster Two', cursive;    
+}
+
+.skill-card{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px !important;
+
+}
+
+.project-card{
+    border-radius: 10px !important;
+    margin: 10px !important;
+}
+
+.project-img{
+    height: 300px;
+    width: auto;
+}
+
+.modal-content{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.modal-dialog {
+    max-width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutmore-card{
+    width: 100%;
+    cursor:pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.aboutmore-card:hover{
+    transform: translateY(-10px);
+    background-color:var(--secondary);
+}
+
+.aboutmore-card:active{
+    transform: rotate(-5deg);
+}
+
+.service-card{
+    width: 60%;
+    height: 300px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.service-card:hover{
+    background-color: var(--secondary);   
+    transform:scale(0.9)
+}
+
+.blog-se{
+    border: 1px solid var(--dark);
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.blog-line{
+    width: 1px;
+    background-color: #434343;
+}
+
+.blog-date{
+    padding: 10px;
+    background-color: var(--dark);
+    margin-top: 50%;
+}
+
+.blog-img{
+    transition: 0.5s;
+}
+
+.blog-img img{
+    width: 100%;
+}
+
+.blog-img:hover{
+    transform: translateY(-10px);
+    filter:grayscale(100%);
+}
+
+
+
+
+@media screen and (max-width:480px) {
+    .profile-img{
+        width: 200px;
+        height: auto;
+    }
+
+    .profile-text{
+        width: 100% !important;
+        margin-top: 0px;
+    }
+    
+    .skill{
+    margin-top: 350px;
+    }
+
+    .modal-dialog {
+        max-width: 100%;
+        margin-top:170px;
+    }
+
+    .service-card{
+        width: 100%;
+    }
+    .blog-date{
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    .profile-text{
+        margin-top: 0px;
+    }
+
+    .about-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .service-card{
+        width: 100%;
+    }
+
+    .blog-date{
+        width: 100% !important;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    
+}
