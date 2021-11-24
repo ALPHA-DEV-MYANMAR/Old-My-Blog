@@ -156,3 +156,39 @@ $(".service-slide").slick({
         }
     ]
 });
+
+$(".album-slide").slick({
+    arrows: false,
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    // autoplay: true,
+    // autoplaySpeed: 5000,
+    responsive: [
+        {
+            breakpoint: 1400,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});

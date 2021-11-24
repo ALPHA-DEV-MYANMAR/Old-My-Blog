@@ -10,6 +10,9 @@
     --violat: #8B5CF6;
     --secondary: #D1D5DB;
     --sh: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+    --bgone: #f5f8fc;
+    --backone: #191c26;
+    --backtwo: #111319;
 }
 
 *{
@@ -20,7 +23,11 @@
 }
 
 body{
-    
+   
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 .bold-font{
@@ -32,32 +39,61 @@ body{
     color: var(--violat);
 }
 
+.aboutme{
+    background-image: url("../img/svg/bg-3.svg");
+}
+
 .about-img{
     width: 100%;
     border-radius: 10px;
     box-shadow: var(--sh);
-    filter:grayscale(100%);
+    transition: 0.5s;
+}
+
+.about-img:hover{
+    transform: translateY(-10px);
+    box-shadow: var(--sh);
+    filter: grayscale(100%);
 }
 
 .profile{   
+    /* background-image: url('../img/wallpaper/6.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2000;
+    
+    background-image: url("../img/svg/bg-3.svg");
+}
+
+.profile::before{
+    content: "";
     width: 100%;
     height: 100vh;
+    position: absolute;
+    /* background-color: var(--backtwo); */
+    opacity: 0.5;
+    z-index: -1;
 }
 
 .profile-card{
+    background-color:var(--backone);
+    color: var(--dark);
     width: 100%;
-    height: 90vh;
-    background-image: url('../img/joker.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center;
-    border: var(--dark);
+    height: 90%;
 }
 
 .profile-img{
-    width: 300px;
+    width:250px;
     height: auto;
-    filter:grayscale(100%);
+    border:1px solid var(--secondary);
+    transition: 0.5s;
+}
+
+.profile-img:hover{
+    transform: translateY(-10px);
+    box-shadow: var(--sh);
+    filter: grayscale(100%);
 }
 
 .profile-text{
@@ -68,8 +104,6 @@ body{
     font-family: 'Lobster Two', cursive;
 }
 
-.profile-icon{
-}
 
 .profile-icon a{
     color: var(--light);
@@ -88,12 +122,21 @@ body{
     font-family: 'Lobster Two', cursive;    
 }
 
-.skill-card{
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-radius: 10px !important;
+.skill{
+    background-image: url("../img/svg/bg-3.svg");
+}
 
+.skill-card{
+    border-radius: 0 !important;
+    border-color: var(--secondary);
+    transition: 0.5s;
+    border-radius: 10px !important;
+    
+}
+
+.skill-card:hover{
+    transform: translateY(-10px);
+    box-shadow: var(--sh);
 }
 
 .project-card{
@@ -107,9 +150,7 @@ body{
 }
 
 .modal-content{
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: var(--backtwo);
 }
 
 .modal-dialog {
@@ -121,11 +162,16 @@ body{
     align-items: center;
 }
 
+.aboutme{
+  
+}
+
 .aboutmore-card{
     width: 100%;
     cursor:pointer;
     transition: 0.5s;
     border-radius: 10px;
+
 }
 
 .aboutmore-card:hover{
@@ -135,6 +181,10 @@ body{
 
 .aboutmore-card:active{
     transform: rotate(-5deg);
+}
+
+.aboutmoretable{
+    border-color: var(--backtwo) !important;
 }
 
 .service-card{
@@ -179,8 +229,155 @@ body{
     filter:grayscale(100%);
 }
 
+.alternate{
+    animation-direction: alternate;
+}
+
+.contact-input{
+    border-radius: 0 !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.contact-input:focus{
+    border-color: black;
+    box-shadow: none !important;
+}
+
+.contact-ta{
+    border-radius: 0 !important;
+    
+}
+.contact-ta:focus{
+    border-color: black;
+    box-shadow: none !important;
+}
+
+.contact-info{
+    background-color: var(--dark);
+    color: var(--light);
+}
 
 
+.contact-item{
+    margin-top: 10px;
+}
+
+.contact-item a{
+    padding: 5px;
+    margin: 10px;
+    color: white;
+}
+
+.contact-list{
+    transition: 0.2s;
+}
+
+.contact-list:hover{
+    transform: rotate(10deg);
+}
+
+.contact-text{
+    margin-top: 10px;
+}
+
+.album-card{
+
+    border-radius: 10px;
+    margin: 20px !important;
+}
+
+.album-img{
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position:center;
+    transition: 0.5s;
+}
+
+.album-img:hover{
+    transform:translateY(-10px);
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+}
+
+.teacher-list{
+    padding: 10px;
+    text-decoration: none;
+}
+
+.teacher-list a {
+    color: var(--dark); 
+}
+
+.teacher-list div{
+    transition: 0.5s;
+}
+
+.teacher-list div:hover{
+    transform:translateY(-10px);
+}
+
+.offcanvas{
+    z-index: 3000;
+    width: 200px;
+}
+
+.offcanvas-text{
+    margin-left: 10px;
+}
+
+.offcanvas-text a{
+    color: var(--backone);
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Concert One', cursive;
+}
+
+
+.offcanvasopen{
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    background-color:var(--backone);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+    border-radius: 10px;
+    box-shadow: var(--sh);
+    position: fixed;
+}
+
+.offcanvasopen:active{
+    transform: scale(0.9);
+}
+
+.offcanvas-list{
+    text-decoration: none;
+}
+
+.offcanvas-list svg{
+    width: 50px;
+}
+
+.offcanvas-list div{
+    color: var(--backone);
+    margin: 10px;
+}
+
+.offcanvas-list div:hover{
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
+
+.offcanvas-text{
+    width: 100%;
+}
 
 @media screen and (max-width:480px) {
     .profile-img{
