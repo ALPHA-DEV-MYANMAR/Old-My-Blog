@@ -57,10 +57,10 @@ const k = document.getElementById('knowledge').getContext('2d');
 const myChart = new Chart(k, {
     type: 'line',
     data: {
-        labels: ['MySQL', 'WebSecurity', 'Linux', 'Networking', 'JAVA'],
+        labels: ['MySQL', 'WebSecurity', 'Linux', 'Networking', 'JAVA','Worldpress'],
         datasets: [{
             label: 'knowledge',
-            data: [20, 0, 0, 20, 40],
+            data: [20, 0, 0, 20, 30,30],
             backgroundColor: [
                 '#4C1D95'
             ],

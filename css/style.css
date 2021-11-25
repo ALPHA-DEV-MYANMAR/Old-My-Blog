@@ -47,6 +47,7 @@ html{
     width: 100%;
     border-radius: 10px;
     box-shadow: var(--sh);
+    border:1px solid var(--secondary);
     transition: 0.5s;
 }
 
@@ -131,12 +132,12 @@ html{
     border-color: var(--secondary);
     transition: 0.5s;
     border-radius: 10px !important;
-    
 }
 
 .skill-card:hover{
     transform: translateY(-10px);
     box-shadow: var(--sh);
+    background-color: var(--secondary);
 }
 
 .project-card{
@@ -150,7 +151,7 @@ html{
 }
 
 .modal-content{
-    background-color: var(--backtwo);
+    /* background-color: var(--backtwo); */
 }
 
 .modal-dialog {
@@ -163,7 +164,7 @@ html{
 }
 
 .aboutme{
-  
+
 }
 
 .aboutmore-card{
@@ -171,6 +172,7 @@ html{
     cursor:pointer;
     transition: 0.5s;
     border-radius: 10px;
+    border:1px solid var(--backtwo);
 
 }
 
@@ -184,7 +186,7 @@ html{
 }
 
 .aboutmoretable{
-    border-color: var(--backtwo) !important;
+    border-color: var(--light) !important;
 }
 
 .service-card{
