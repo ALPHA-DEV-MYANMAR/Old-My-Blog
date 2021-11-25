@@ -7,9 +7,7 @@ VanillaCounter();
 let project_content = document.getElementById('project_content');
 let project_count = document.getElementById('project_count');
 
-$.getJSON('https://raw.githubusercontent.com/ALPHA-DEV-MYANMAR/URL/main/project.js',function(pdata,status){
-    console.log(pdata)
-
+$.getJSON('https://raw.githubusercontent.com/ALPHA-DEV-MYANMAR/MY-BLOG/main/api/project.js',function(pdata,status){
     // Project data
     let limitdata = pdata.slice(Math.max(pdata.length - 6, 0))
     limitdata.forEach(el => {
@@ -65,7 +63,8 @@ month[9] = "October";
 month[10] = "November";
 month[11] = "December";
 let Month = month[date.getMonth()];
-let current_date = date.getDay()+'/'+Month+'/'+date.getFullYear();
+let Day = String(date.getDate()).padStart(2, '0');
+let current_date = Day+'/'+Month+'/'+date.getFullYear();
 blog_date.innerHTML = `
     ${current_date}
 `;
