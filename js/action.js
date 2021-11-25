@@ -9,6 +9,7 @@ let project_count = document.getElementById('project_count');
 
 $.getJSON('https://raw.githubusercontent.com/ALPHA-DEV-MYANMAR/MY-BLOG/main/api/project.js',function(pdata,status){
     // Project data
+    console.log(pdata);
     let limitdata = pdata.slice(Math.max(pdata.length - 6, 0))
     limitdata.forEach(el => {
         project_content.innerHTML += `
