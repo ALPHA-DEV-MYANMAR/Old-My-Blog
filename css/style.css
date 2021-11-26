@@ -154,7 +154,7 @@ html{
     /* background-color: var(--backtwo); */
 }
 
-.modal-dialog {
+.aboutmemodal {
     max-width: 80%;
     margin: auto;
     height: 100%;
@@ -381,6 +381,15 @@ html{
     width: 100%;
 }
 
+.custom-modal{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--light);
+    position:fixed;
+    top: 0;
+    z-index: 4000;
+}
+
 @media screen and (max-width:480px) {
     .profile-img{
         width: 200px;
@@ -396,7 +405,7 @@ html{
     margin-top: 350px;
     }
 
-    .modal-dialog {
+    .aboutmemodal{
         max-width: 100%;
         margin-top:170px;
     }

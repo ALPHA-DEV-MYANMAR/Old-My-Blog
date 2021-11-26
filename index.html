@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="vendor/Hover-master/css/hover-min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -25,16 +27,17 @@
     <!-- Extra -->
 
     <!-- Offcanvas -->
-    
-    <div class="offcanvasopen animate__animated animate__bounce animate__slower animate__infinite " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"">
-        <i data-feather="list" class="text-light"></i>
+
+    <div class="offcanvasopen animate__animated animate__bounce animate__slower animate__infinite " type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"">
+        <i class=" fas fa-list-ul text-light"></i>
     </div>
 
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
         aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header">
-            <div class="offcanvas-title h2 skill-text fw-bolder " id="offcanvasWithBothOptionsLabel">
-                <i data-feather="list"></i>
+            <div class="offcanvas-title h3 skill-text fw-bolder " id="offcanvasWithBothOptionsLabel">
+                <i class=" fas fa-list"></i>
                 Menu list
             </div>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -43,7 +46,7 @@
         <div class="offcanvas-body">
             <a class=" offcanvas-list" href="#home">
                 <div class=" d-flex align-items-center h4 mb-0">
-                    <i data-feather="home"></i>
+                    <i class=" fas fa-home"></i>
                     <div class="bold-font offcanvas-text">
                         Home
                     </div>
@@ -51,7 +54,7 @@
             </a>
             <a class=" offcanvas-list" href="#about">
                 <div class=" d-flex align-items-center h4 mb-0">
-                    <i data-feather="user"></i>
+                    <i class="fas fa-user-tie"></i>
                     <div class="bold-font offcanvas-text">
                         About
                     </div>
@@ -59,7 +62,7 @@
             </a>
             <a class=" offcanvas-list" href="#skill">
                 <div class=" d-flex align-items-center h4 mb-0">
-                    <i data-feather="activity"></i>
+                    <i class="fas fa-chart-line"></i>
                     <div class="bold-font offcanvas-text">
                         Skills
                     </div>
@@ -67,7 +70,7 @@
             </a>
             <a class=" offcanvas-list" href="#service">
                 <div class=" d-flex align-items-center h4 mb-0">
-                    <i data-feather="sliders"></i>
+                    <i class="fas fa-sliders-h"></i>
                     <div class="bold-font offcanvas-text">
                         Service
                     </div>
@@ -75,7 +78,7 @@
             </a>
             <a class=" offcanvas-list" href="#project">
                 <div class=" d-flex align-items-center h4 mb-0">
-                    <i data-feather="package"></i>
+                    <i class="fas fa-box"></i>
                     <div class="bold-font offcanvas-text">
                         Projects
                     </div>
@@ -83,7 +86,7 @@
             </a>
             <a class=" offcanvas-list" href="#blog">
                 <div class=" d-flex align-items-center h4 mb-0">
-                    <i data-feather="book-open"></i>
+                    <i class="fab fa-blogger-b"></i>
                     <div class="bold-font offcanvas-text">
                         Blog
                     </div>
@@ -91,7 +94,7 @@
             </a>
             <a class=" offcanvas-list" href="#trainer">
                 <div class=" d-flex align-items-center h4 mb-0">
-                    <i data-feather="sun"></i>
+                    <i class="fas fa-chalkboard-teacher"></i>
                     <div class="bold-font offcanvas-text">
                         Trainer
                     </div>
@@ -99,7 +102,7 @@
             </a>
             <a class=" offcanvas-list" href="#contact">
                 <div class=" d-flex align-items-center h4 mb-0">
-                    <i data-feather="phone-forwarded"></i>
+                    <i class="fas fa-phone-square-alt"></i>
                     <div class="bold-font offcanvas-text">
                         Contact
                     </div>
@@ -109,10 +112,10 @@
     </div>
     <!-- Offcanvas -->
 
-    <!-- Modal -->
+    <!-- About Me Modal -->
     <div class="modal fade" id="moreaboutme" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog aboutmemodal">
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="row flex-column-reverse flex-md-column-reverse flex-lg-row">
@@ -175,7 +178,8 @@
                             <div class=" h3 skill-text fw-bolder d-flex justify-content-between text-dark">
                                 Achievements
                                 <div>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
                             </div>
                             <div>
@@ -186,7 +190,7 @@
                                             <div
                                                 class="card-body d-flex justify-content-center align-items-center flex-column">
                                                 <div>
-                                                    <i data-feather="clipboard"></i>
+                                                    <i class="fas fa-book-open h5 mb-0"></i>
                                                 </div>
                                                 <div class=" mt-3 first-font">
                                                     03+ month experience
@@ -199,7 +203,7 @@
                                             <div
                                                 class="card-body d-flex justify-content-center align-items-center flex-column">
                                                 <div>
-                                                    <i data-feather="package"></i>
+                                                    <i class="fas fa-cubes h5 mb-0"></i>
                                                 </div>
                                                 <div class=" mt-3 first-font">
                                                     20+ completed projects
@@ -212,7 +216,7 @@
                                             <div
                                                 class="card-body d-flex justify-content-center align-items-center flex-column">
                                                 <div>
-                                                    <i data-feather="users"></i>
+                                                    <i class="fas fa-users h5 mb-0"></i>
                                                 </div>
                                                 <div class=" mt-3 first-font ">
                                                     00+ happy client
@@ -225,7 +229,7 @@
                                             <div
                                                 class="card-body d-flex justify-content-center align-items-center flex-column">
                                                 <div>
-                                                    <i data-feather="award"></i>
+                                                    <i class="fas fa-award h5 mb-0"></i>
                                                 </div>
                                                 <div class=" mt-3 first-font">
                                                     04+ certificate
@@ -241,6 +245,12 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Blog Modal -->
+    
+    <div class="container-fluid" id="custom_modal">
+ 
     </div>
 
     <!-- Extra -->
@@ -288,25 +298,36 @@
                                                 alt="">
                                         </div>
                                         <div
-                                            class="text-light mt-2 d-flex justify-content-evenly profile-icon animate__animated animate__bounce animate__fadeInUp  wow ">
+                                            class="text-light mt-2 d-flex justify-content-evenly profile-icon animate__animated animate__bounce animate__fadeIn animate__delay-2s  wow ">
                                             <div>
                                                 <a href="" title="facebook">
-                                                    <i data-feather="facebook"></i>
+                                                    <span style="font-size: 25px;">
+                                                        <i class="fab fa-facebook"></i>
+                                                    </span>
                                                 </a>
                                             </div>
                                             <div>
                                                 <a href="" title="github">
-                                                    <i data-feather="github"></i>
+                                                    <span style="font-size: 25px;">
+                                                        <i class="fab fa-github"></i>
+                                                    </span>
+
                                                 </a>
                                             </div>
                                             <div>
-                                                <a href="" title="mail">
-                                                    <i data-feather="mail"></i>
+                                                <a href="" title="instagram">
+                                                    <span style="font-size: 25px;">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </span>
+                                                    
                                                 </a>
                                             </div>
                                             <div>
                                                 <a href="" title="twitter">
-                                                    <i data-feather="twitter"></i>
+                                                    <span style="font-size: 25px;">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </span>
+                                                   
                                                 </a>
                                             </div>
                                         </div>
@@ -358,23 +379,24 @@
                                 </div>
                                 <div class="row">
                                     <div class=" col-12 col-md-6">
-                                        Full Name : Aung Paing Soe <br>
-                                        Facebook Name : Aung Paing Soe <br>
-                                        Age : 21 <br>
-                                        Phone : +95 960187283
+                                        <span class=" fw-bolder bold-font">Name</span> : Aung Paing Soe <br>
+                                        <span class=" fw-bolder bold-font">Facebook Name</span> : Aung Paing Soe <br>
+                                        <span class=" fw-bolder bold-font">Age</span> : 21 <br>
+                                        <span class=" fw-bolder bold-font">Phone</span> : +95 960187283
                                     </div>
                                     <div class=" col-12 col-md-6">
-                                        Nationality : Myanmar <br>
-                                        Address : Yangon <br>
-                                        Language : Burmese,English,Japan(N5) <br>
-                                        Gmail : alpha.dev.myanmar@gmail.com
+                                        <span class=" fw-bolder bold-font">Nationality</span> : Myanmar <br>
+                                        <span class=" fw-bolder bold-font">Address</span> : Yangon <br>
+                                        <span class=" fw-bolder bold-font">Language</span> : Burmese,English,Japan(N5)
+                                        <br>
+                                        <span class=" fw-bolder bold-font">Gmail</span> : alpha.dev.myanmar@gmail.com
                                     </div>
                                 </div>
                                 <div class=" mt-md-3">
                                     <button class="button-57" role="button" data-bs-toggle="modal"
                                         data-bs-target="#moreaboutme">
                                         <span class="text">More About Me </span>
-                                        <span>Click me</span>
+                                        <span>CLICKME</span>
                                     </button>
                                 </div>
                             </div>
@@ -498,7 +520,7 @@
                             </h4>
                             <div class=" text-black-50 ">
                                 Total : <span id="project_count">
-                                    
+
                                 </span>
                             </div>
                         </div>
@@ -532,7 +554,7 @@
                     </div>
                 </div>
 
-                <div class="row" >
+                <div class="row">
                     <div class=" text-center">
                         <div class=" col-12 col-md-12 col-lg-4 mx-auto blog-se">
                             5/March/2000
@@ -541,370 +563,389 @@
 
 
                     <div id="blog_content">
-                    <!-- Journal Group -->
-                    <!-- Journal one -->
-                    <div class="col-12 col-md-12 col-lg-9  mx-auto  d-flex flex-wrap-reverse flex-lg-nowrap ">
+                        <!-- Journal Group -->
+                        <!-- Journal one -->
+                        <div class="col-12 col-md-12 col-lg-9  mx-auto  d-flex flex-wrap-reverse flex-lg-nowrap">
 
-                        <div class="w-100">
-                            <div class="img-thumbnail blog-img animate__animated animate__fadeInLeft animate__slow wow">
-                                <div>
-                                    <img src="img/blog/thantlang.jpg" class=" img-fluid" alt="">
-                                </div>
-                                <div class=" text-center p-1">
-                                    <div class=" h5 bold-font">Where did I born</div>
-                                    <p class=" text-justify text-black-50 ">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum maxime illo
-                                        commodi sint numquam possimus quisquam consequatur sequi, laborum doloremque qui
-                                        voluptatibus facilis exercitationem iusto aliquam praesentium, ab dolorum.
-                                    </p>
-                                    <div>
-                                        <button class="button-57" role="button">
-                                            <span class="text vid-text">
-                                                Read More
-                                                <i data-feather="arrow-right"></i>
-                                            </span>
-                                            <span>Click me</span>
-                                        </button>
+                            <div class="w-100">
+                                <div
+                                    class="img-thumbnail blog-img animate__animated animate__fadeInLeft animate__slow wow">
+                                    <div >
+                                        <img src="img/blog/thantlang.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class=" text-center p-1">
+                                        <div class=" h5 bold-font">Where did I born</div>
+                                        <p class=" text-justify text-black-50 " id="p">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum maxime
+                                            illo
+                                            commodi sint numquam possimus quisquam consequatur sequi, laborum doloremque
+                                            qui
+                                            voluptatibus facilis exercitationem iusto aliquam praesentium, ab dolorum.
+                                        </p>
+                                        <div>
+                                            <button class="button-57" role="button" id="blog_btn">
+                                                <span class="text vid-text">
+                                                    Read More
+                                                    <i class=" fas fa-arrow-right"></i>
+                                                </span>
+                                                <span>Click me</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="d-flex justify-content-center mx-5">
-                            <div class="blog-line">
-                            </div>
-                        </div>
-
-                        <div class="w-100">
-                            <div class="blog-date skill-text text-center text-light w-50">
-                                <i data-feather="arrow-left" class="float-start d-none d-lg-block text-light"></i>
-                                Birthday
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Journal one -->
-
-                    <!-- Journal two -->
-                    <div
-                        class="col-12 col-md-12 col-lg-9  mx-auto  d-flex flex-wrap-reverse flex-row-reverse flex-lg-nowrap">
-
-                        <div class="w-100">
-                            <div
-                                class="img-thumbnail blog-img animate__animated animate__fadeInRight animate__slow wow">
-                                <div>
-                                    <img src="img/blog/westuni.jpg" class=" img-fluid" alt="">
+                            <div class="d-flex justify-content-center mx-5">
+                                <div class="blog-line">
                                 </div>
-                                <div class=" text-center p-1">
-                                    <div class=" h5 bold-font">What is my Education</div>
-                                    <p class=" text-justify text-black-50">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum maxime illo
-                                        commodi sint numquam possimus quisquam consequatur sequi, laborum doloremque qui
-                                        voluptatibus facilis exercitationem iusto aliquam praesentium, ab dolorum.
-                                    </p>
+                            </div>
+
+                            <div class="w-100">
+                                <div class="blog-date skill-text text-center text-light w-50 ">
+                                    <i  class="fas fa-arrow-left h4 float-start d-none d-lg-block text-light"></i>
+                                    Birthday
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Journal one -->
+
+                        <!-- Journal two -->
+                        <div class="col-12 col-md-12 col-lg-9  mx-auto  d-flex flex-wrap-reverse flex-row-reverse flex-lg-nowrap" >
+
+                            <div class="w-100">
+                                <div
+                                    class="img-thumbnail blog-img animate__animated animate__fadeInRight animate__slow wow">
                                     <div>
-                                        <button class="button-57" role="button">
-                                            <span class="text vid-text">
-                                                Read More
-                                                <i data-feather="arrow-right"></i>
-                                            </span>
-                                            <span>Click me</span>
-                                        </button>
+                                        <img src="img/blog/westuni.jpg" class=" img-fluid" alt="">
+                                    </div>
+                                    <div class=" text-center p-1">
+                                        <div class=" h5 bold-font">What is my Education</div>
+                                        <p class=" text-justify text-black-50" id="p_one">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum maxime
+                                            illo
+                                            commodi sint numquam possimus quisquam consequatur sequi, laborum doloremque
+                                            qui
+                                            voluptatibus facilis exercitationem iusto aliquam praesentium, ab dolorum.
+                                        </p>
+                                        <div>
+                                            <button class="button-57" role="button" id="blog_btn_one">
+                                                <span class="text vid-text">
+                                                    Read More
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                                <span>Click me</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="d-flex justify-content-center mx-5">
-                            <div class="blog-line">
-                            </div>
-                        </div>
-
-                        <div class="w-100">
-                            <div class="blog-date skill-text text-center text-light w-50 float-end">
-                                <i data-feather="arrow-right" class=" float-end d-none d-lg-block"></i>
-                                Education
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Journal two -->
-                    <!-- Journal Group -->                   
-
-				   <!-- Journal Group -->
-                    <!-- Journal one -->
-                    <div class="col-12 col-md-12 col-lg-9  mx-auto  d-flex flex-wrap-reverse flex-lg-nowrap ">
-
-                        <div class="w-100">
-                            <div class="img-thumbnail blog-img animate__animated animate__fadeInLeft animate__slow wow">
-                                <div>
-                                    <img src="img/blog/yangon.jpg" class=" img-fluid" alt="">
+                            <div class="d-flex justify-content-center mx-5">
+                                <div class="blog-line">
                                 </div>
-                                <div class=" text-center p-1">
-                                    <div class=" h5 bold-font">Where did I live</div>
-                                    <p class=" text-justify text-black-50 ">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum maxime illo
-                                        commodi sint numquam possimus quisquam consequatur sequi, laborum doloremque qui
-                                        voluptatibus facilis exercitationem iusto aliquam praesentium, ab dolorum.
-                                    </p>
+                            </div>
+
+                            <div class="w-100">
+                                <div class="blog-date skill-text text-center text-light w-50 float-end">
+                                    <i  class="fas fa-arrow-right h4  float-end d-none d-lg-block"></i>
+                                    Education
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Journal two -->
+                        <!-- Journal Group -->
+
+                        <!-- Journal Group -->
+                        <!-- Journal one -->
+                        <div class="col-12 col-md-12 col-lg-9  mx-auto  d-flex flex-wrap-reverse flex-lg-nowrap " >
+
+                            <div class="w-100">
+                                <div
+                                    class="img-thumbnail blog-img animate__animated animate__fadeInLeft animate__slow wow">
                                     <div>
-                                        <button class="button-57" role="button">
-                                            <span class="text vid-text">
-                                                Read More
-                                                <i data-feather="arrow-right"></i>
-                                            </span>
-                                            <span>Click me</span>
-                                        </button>
+                                        <img src="img/blog/yangon.jpg" class=" img-fluid" alt="">
+                                    </div>
+                                    <div class=" text-center p-1">
+                                        <div class=" h5 bold-font">Where did I live</div>
+                                        <p class=" text-justify text-black-50 " id="p_two">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum maxime
+                                            illo
+                                            commodi sint numquam possimus quisquam consequatur sequi, laborum doloremque
+                                            qui
+                                            voluptatibus facilis exercitationem iusto aliquam praesentium, ab dolorum.
+                                        </p>
+                                        <div>
+                                            <button class="button-57" role="button" id="blog_btn_two">
+                                                <span class="text vid-text">
+                                                    Read More
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                                <span>Click me</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="d-flex justify-content-center mx-5">
-                            <div class="blog-line">
-                            </div>
-                        </div>
-
-                        <div class="w-100">
-                            <div class="blog-date skill-text text-center text-light w-50">
-                                <i data-feather="arrow-left" class=" float-start d-none d-lg-block"></i>
-                                Live In
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Journal one -->
-
-                    <!-- Journal two -->
-                    <div
-                        class="col-12 col-md-12 col-lg-9  mx-auto  d-flex flex-wrap-reverse flex-row-reverse flex-lg-nowrap">
-
-                        <div class="w-100">
-                            <div
-                                class="img-thumbnail blog-img animate__animated animate__fadeInRight animate__slow wow">
-                                <div>
-                                    <img src="img/blog/max.jpg" class=" img-fluid" alt="">
+                            <div class="d-flex justify-content-center mx-5">
+                                <div class="blog-line">
                                 </div>
-                                <div class=" text-center p-1">
-                                    <div class=" h5 bold-font">What is my Job</div>
-                                    <p class=" text-justify text-black-50">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum maxime illo
-                                        commodi sint numquam possimus quisquam consequatur sequi, laborum doloremque qui
-                                        voluptatibus facilis exercitationem iusto aliquam praesentium, ab dolorum.
-                                    </p>
+                            </div>
+
+                            <div class="w-100">
+                                <div class="blog-date skill-text text-center text-light w-50">
+                                    <i  class="fas fa-arrow-left h4  float-start d-none d-lg-block"></i>
+                                    Live In
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Journal one -->
+
+                        <!-- Journal two -->
+                        <div
+                            class="col-12 col-md-12 col-lg-9  mx-auto  d-flex flex-wrap-reverse flex-row-reverse flex-lg-nowrap">
+
+                            <div class="w-100">
+                                <div
+                                    class="img-thumbnail blog-img animate__animated animate__fadeInRight animate__slow wow">
                                     <div>
-                                        <button class="button-57" role="button">
-                                            <span class="text vid-text">
-                                                Read More
-                                                <i data-feather="arrow-right"></i>
-                                            </span>
-                                            <span>Click me</span>
-                                        </button>
+                                        <img src="img/blog/max.jpg" class=" img-fluid" alt="">
+                                    </div>
+                                    <div class=" text-center p-1">
+                                        <div class=" h5 bold-font">What is my Job</div>
+                                        <p class=" text-justify text-black-50" id="p_three">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum maxime
+                                            illo
+                                            commodi sint numquam possimus quisquam consequatur sequi, laborum doloremque
+                                            qui
+                                            voluptatibus facilis exercitationem iusto aliquam praesentium, ab dolorum.
+                                        </p>
+                                        <div>
+                                            <button class="button-57" role="button" id="blog_btn_three">
+                                                <span class="text vid-text">
+                                                    Read More
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                                <span>Click me</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="d-flex justify-content-center mx-5">
-                            <div class="blog-line">
-                            </div>
-                        </div>
-
-                        <div class="w-100">
-                            <div class="blog-date skill-text text-center text-light w-50 float-end">
-                                <i data-feather="arrow-right" class=" float-end d-none d-lg-block"></i>
-                                Current Job
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Journal two -->
-                    <!-- Journal Group -->
-
-                    <!-- Journal Group -->
-                    <!-- Journal one -->
-                    <div class="col-12 col-md-12 col-lg-9  mx-auto  d-flex flex-wrap-reverse flex-lg-nowrap ">
-
-                        <div class="w-100">
-                            <div class="img-thumbnail blog-img animate__animated animate__fadeInLeft animate__slow wow">
-                                <div>
-                                    <img src="img/blog/webdev.png" class=" img-fluid" alt="">
+                            <div class="d-flex justify-content-center mx-5">
+                                <div class="blog-line">
                                 </div>
-                                <div class=" text-center p-1">
-                                    <div class=" h5 bold-font">What I was study</div>
-                                    <p class=" text-justify text-black-50 ">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum maxime illo
-                                        commodi sint numquam possimus quisquam consequatur sequi, laborum doloremque qui
-                                        voluptatibus facilis exercitationem iusto aliquam praesentium, ab dolorum.
-                                    </p>
+                            </div>
+
+                            <div class="w-100">
+                                <div class="blog-date skill-text text-center text-light w-50 float-end">
+                                    <i class="fas fa-arrow-right h4  float-end d-none d-lg-block"></i>
+                                    Current Job
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Journal two -->
+                        <!-- Journal Group -->
+
+                        <!-- Journal Group -->
+                        <!-- Journal one -->
+                        <div class="col-12 col-md-12 col-lg-9  mx-auto  d-flex flex-wrap-reverse flex-lg-nowrap ">
+
+                            <div class="w-100">
+                                <div
+                                    class="img-thumbnail blog-img animate__animated animate__fadeInLeft animate__slow wow">
                                     <div>
-                                        <button class="button-57" role="button">
-                                            <span class="text vid-text">
-                                                Read More
-                                                <i data-feather="arrow-right"></i>
-                                            </span>
-                                            <span>Click me</span>
-                                        </button>
+                                        <img src="img/blog/webdev.png" class=" img-fluid" alt="">
+                                    </div>
+                                    <div class=" text-center p-1">
+                                        <div class=" h5 bold-font">What I was study</div>
+                                        <p class=" text-justify text-black-50 " id="p_four">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum maxime
+                                            illo
+                                            commodi sint numquam possimus quisquam consequatur sequi, laborum doloremque
+                                            qui
+                                            voluptatibus facilis exercitationem iusto aliquam praesentium, ab dolorum.
+                                        </p>
+                                        <div>
+                                            <button class="button-57" role="button" id="blog_btn_four">
+                                                <span class="text vid-text">
+                                                    Read More
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                                <span>Click me</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="d-flex justify-content-center mx-5">
-                            <div class="blog-line">
-                            </div>
-                        </div>
-
-                        <div class="w-100">
-                            <div class="blog-date skill-text text-center text-light w-50">
-                                <i data-feather="arrow-left" class=" float-start d-none d-lg-block"></i>
-                                Studying
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Journal one -->
-
-                    <!-- Journal two -->
-                    <div
-                        class="col-12 col-md-12 col-lg-9  mx-auto  d-flex flex-wrap-reverse flex-row-reverse flex-lg-nowrap">
-
-                        <div class="w-100">
-                            <div
-                                class="img-thumbnail blog-img animate__animated animate__fadeInRight animate__slow wow">
-                                <div>
-                                    <img src="img/blog/twice.jpg" class=" img-fluid" alt="">
+                            <div class="d-flex justify-content-center mx-5">
+                                <div class="blog-line">
                                 </div>
-                                <div class=" text-center p-1">
-                                    <div class=" h5 bold-font">No Twice.No life</div>
-                                    <p class=" text-justify text-black-50">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum maxime illo
-                                        commodi sint numquam possimus quisquam consequatur sequi, laborum doloremque qui
-                                        voluptatibus facilis exercitationem iusto aliquam praesentium, ab dolorum.
-                                    </p>
+                            </div>
+
+                            <div class="w-100">
+                                <div class="blog-date skill-text text-center text-light w-50">
+                                    <i class="fas fa-arrow-left h4  float-start d-none d-lg-block"></i>
+                                    Studying
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Journal one -->
+
+                        <!-- Journal two -->
+                        <div
+                            class="col-12 col-md-12 col-lg-9  mx-auto  d-flex flex-wrap-reverse flex-row-reverse flex-lg-nowrap">
+
+                            <div class="w-100">
+                                <div
+                                    class="img-thumbnail blog-img animate__animated animate__fadeInRight animate__slow wow">
                                     <div>
-                                        <button class="button-57" role="button">
-                                            <span class="text vid-text">
-                                                Read More
-                                                <i data-feather="arrow-right"></i>
-                                            </span>
-                                            <span>Click me</span>
-                                        </button>
+                                        <img src="img/blog/twice.jpg" class=" img-fluid" alt="">
+                                    </div>
+                                    <div class=" text-center p-1">
+                                        <div class=" h5 bold-font">No Twice.No life</div>
+                                        <p class=" text-justify text-black-50" id="p_five">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum maxime
+                                            illo
+                                            commodi sint numquam possimus quisquam consequatur sequi, laborum doloremque
+                                            qui
+                                            voluptatibus facilis exercitationem iusto aliquam praesentium, ab dolorum.
+                                        </p>
+                                        <div>
+                                            <button class="button-57" role="button" id="blog_btn_five">
+                                                <span class="text vid-text">
+                                                    Read More
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                                <span>Click me</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="d-flex justify-content-center mx-5">
-                            <div class="blog-line">
-                            </div>
-                        </div>
-
-                        <div class="w-100">
-                            <div class="blog-date skill-text text-center text-light w-50 float-end">
-                                <i data-feather="arrow-right" class=" float-end d-none d-lg-block"></i>
-                                Faviate Idols
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Journal two -->
-                    <!-- Journal Group -->
-
-                    <!-- Journal Group -->
-                    <!-- Journal one -->
-                    <div class="col-12 col-md-12 col-lg-9  mx-auto  d-flex flex-wrap-reverse flex-lg-nowrap ">
-
-                        <div class="w-100">
-                            <div class="img-thumbnail blog-img animate__animated animate__fadeInLeft animate__slow wow">
-                                <div>
-                                    <img src="img/blog/tzuyu.jpg" class="img-fluid" alt="">
+                            <div class="d-flex justify-content-center mx-5">
+                                <div class="blog-line">
                                 </div>
-                                <div class=" text-center p-1">
-                                    <div class=" h5 bold-font">Who is My Queen</div>
-                                    <p class=" text-justify text-black-50 ">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum maxime illo
-                                        commodi sint numquam possimus quisquam consequatur sequi, laborum doloremque qui
-                                        voluptatibus facilis exercitationem iusto aliquam praesentium, ab dolorum.
-                                    </p>
+                            </div>
+
+                            <div class="w-100">
+                                <div class="blog-date skill-text text-center text-light w-50 float-end">
+                                    <i class="fas fa-arrow-right h4  float-end d-none d-lg-block"></i>
+                                    Faviate Idols
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Journal two -->
+                        <!-- Journal Group -->
+
+                        <!-- Journal Group -->
+                        <!-- Journal one -->
+                        <div class="col-12 col-md-12 col-lg-9  mx-auto  d-flex flex-wrap-reverse flex-lg-nowrap ">
+
+                            <div class="w-100">
+                                <div
+                                    class="img-thumbnail blog-img animate__animated animate__fadeInLeft animate__slow wow">
                                     <div>
-                                        <button class="button-57" role="button">
-                                            <span class="text vid-text">
-                                                Read More
-                                                <i data-feather="arrow-right"></i>
-                                            </span>
-                                            <span>Click me</span>
-                                        </button>
+                                        <img src="img/blog/tzuyu.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class=" text-center p-1">
+                                        <div class=" h5 bold-font">Who is My Queen</div>
+                                        <p class=" text-justify text-black-50 " id="p_six">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum maxime
+                                            illo
+                                            commodi sint numquam possimus quisquam consequatur sequi, laborum doloremque
+                                            qui
+                                            voluptatibus facilis exercitationem iusto aliquam praesentium, ab dolorum.
+                                        </p>
+                                        <div>
+                                            <button class="button-57" role="button" id="blog_btn_six">
+                                                <span class="text vid-text">
+                                                    Read More
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                                <span>Click me</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="d-flex justify-content-center mx-5">
-                            <div class="blog-line">
-                            </div>
-                        </div>
-
-                        <div class="w-100">
-                            <div class="blog-date skill-text text-center text-light w-50">
-                                <i data-feather="arrow-left" class=" float-start d-none d-lg-block"></i>
-                                Single Idol
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Journal one -->
-
-                    <!-- Journal two -->
-                    <div
-                        class="col-12 col-md-12 col-lg-9  mx-auto  d-flex flex-wrap-reverse flex-row-reverse flex-lg-nowrap">
-
-                        <div class="w-100">
-                            <div
-                                class="img-thumbnail blog-img animate__animated animate__fadeInRight animate__slow wow">
-                                <div>
-                                    <img src="img/blog/dream.jpg" class=" img-fluid" alt="">
+                            <div class="d-flex justify-content-center mx-5">
+                                <div class="blog-line">
                                 </div>
-                                <div class=" text-center p-1">
-                                    <div class=" h5 bold-font">What is my Dream</div>
-                                    <p class=" text-justify text-black-50">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum maxime illo
-                                        commodi sint numquam possimus quisquam consequatur sequi, laborum doloremque qui
-                                        voluptatibus facilis exercitationem iusto aliquam praesentium, ab dolorum.
-                                    </p>
+                            </div>
+
+                            <div class="w-100">
+                                <div class="blog-date skill-text text-center text-light w-50">
+                                    <i  class="fas fa-arrow-left h4  float-start d-none d-lg-block"></i>
+                                    Single Idol
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Journal one -->
+
+                        <!-- Journal two -->
+                        <div
+                            class="col-12 col-md-12 col-lg-9  mx-auto  d-flex flex-wrap-reverse flex-row-reverse flex-lg-nowrap">
+
+                            <div class="w-100">
+                                <div
+                                    class="img-thumbnail blog-img animate__animated animate__fadeInRight animate__slow wow">
                                     <div>
-                                        <button class="button-57" role="button">
-                                            <span class="text vid-text">
-                                                Read More
-                                                <i data-feather="arrow-right"></i>
-                                            </span>
-                                            <span>Click me</span>
-                                        </button>
+                                        <img src="img/blog/dream.jpg" class=" img-fluid" alt="">
+                                    </div>
+                                    <div class=" text-center p-1">
+                                        <div class=" h5 bold-font">What is my Dream</div>
+                                        <p class=" text-justify text-black-50" id="p_seven">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum maxime
+                                            illo
+                                            commodi sint numquam possimus quisquam consequatur sequi, laborum doloremque
+                                            qui
+                                            voluptatibus facilis exercitationem iusto aliquam praesentium, ab dolorum.
+                                        </p>
+                                        <div>
+                                            <button class="button-57" role="button" id="blog_btn_seven">
+                                                <span class="text vid-text">
+                                                    Read More
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                                <span>Click me</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="d-flex justify-content-center mx-5">
-                            <div class="blog-line">
+                            <div class="d-flex justify-content-center mx-5">
+                                <div class="blog-line">
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="w-100">
-                            <div class="blog-date skill-text text-center text-light w-50 float-end">
-                                <i data-feather="arrow-right" class=" float-end d-none d-lg-block"></i>
-                                Dream and future
+                            <div class="w-100">
+                                <div class="blog-date skill-text text-center text-light w-50 float-end">
+                                    <i class="fas fa-arrow-right h4  float-end d-none d-lg-block"></i>
+                                    Dream and future
+                                </div>
                             </div>
-                        </div>
 
-                    </div>
-                    <!-- Journal two -->
-                    <!-- Journal Group -->
+                        </div>
+                        <!-- Journal two -->
+                        <!-- Journal Group -->
                     </div>
 
                     <div class=" text-center">
                         <div class=" col-12 col-md-12 col-lg-4 mx-auto blog-se mt-2" id="blog_date">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -961,21 +1002,21 @@
                                         <div class="teacher-list">
                                             <div>
                                                 <a href="">
-                                                    <i data-feather="facebook"></i>
+                                                    <i class="fab fa-facebook" style="font-size: 25px;"></i>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="teacher-list">
                                             <div>
                                                 <a href="">
-                                                    <i data-feather="github"></i>
+                                                    <i class="fab fa-github" style="font-size: 25px;"></i>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="teacher-list">
                                             <div>
                                                 <a href="">
-                                                    <i data-feather="chrome"></i>
+                                                    <i class="fab fa-chrome" style="font-size: 25px;"></i>
                                                 </a>
                                             </div>
                                         </div>
@@ -992,7 +1033,7 @@
     <!-- Teacher -->
 
     <!-- contact -->
-    <section class="container-fluid contact" id="contact">
+    <footer class="container-fluid contact" id="contact">
         <div class="row vh-100">
             <div class="container">
 
@@ -1057,22 +1098,22 @@
                                     <div class=" d-flex justify-content-between">
                                         <div class="contact-list">
                                             <a href="">
-                                                <i data-feather="facebook"></i>
+                                                <i class="fab fa-facebook" style="font-size: 25px;"></i>
                                             </a>
                                         </div>
                                         <div class="contact-list">
                                             <a href="">
-                                                <i data-feather="github"></i>
+                                                <i class="fab fa-github" style="font-size: 25px;"></i>
                                             </a>
                                         </div>
                                         <div class="contact-list">
                                             <a href="">
-                                                <i data-feather="mail"></i>
+                                                <i class="fas fa-envelope" style="font-size: 25px;"></i>
                                             </a>
                                         </div>
                                         <div class="contact-list">
                                             <a href="">
-                                                <i data-feather="twitter"></i>
+                                                <i class="fab fa-twitter" style="font-size: 25px;"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -1088,13 +1129,13 @@
 
             </div>
         </div>
-    </section>
+    </footer>
     <!-- contact -->
 
 
 
     <!-- JavaScript Bundle with Popper -->
-
+    <script src="vendor/feather/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
         integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -1102,12 +1143,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="vendor/feather/feather.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="vendor/slick/slick.min.js"></script>
     <script src="js/document.js"></script>
     <script src="js/action.js"></script>
+    <script src="js/blog.js"></script>
+
+    <script>
+        feather.replace();
+    </script>
 
 </body>
 
