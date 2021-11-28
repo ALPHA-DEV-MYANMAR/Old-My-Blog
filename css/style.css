@@ -23,7 +23,7 @@
 }
 
 body{
-   
+   font-family: "pyidaungsu";
 }
 
 html{
@@ -35,7 +35,7 @@ html{
 }
 
 .vid-text{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', 'pyidaungsu';
     color: var(--violat);
 }
 
@@ -381,13 +381,38 @@ html{
     width: 100%;
 }
 
+.back{
+    width: 50px;
+    height: 50px;
+    left: 20px;
+    border-radius: 50%;
+    top:20px;
+    background-color:var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+    box-shadow: var(--sh);
+    position: fixed;
+    transition: 0.1s;
+}
+
+.back:hover{
+    background-color: var(--bgone);
+}
+.back:active{
+    transform: scale(0.5);
+}
+
 .custom-modal{
     width: 100%;
     min-height: 100vh;
     background-color: var(--light);
     position:fixed;
     top: 0;
+    right: 0;
     z-index: 4000;
+    overflow: scroll;
 }
 
 @media screen and (max-width:480px) {
@@ -416,6 +441,9 @@ html{
     .blog-date{
         width: 100% !important;
     }
+    .blog_detail_img{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:780px) {
@@ -437,6 +465,10 @@ html{
         width: 100% !important;
         margin-top: 0;
         margin-bottom: 10px;
+    }
+
+    .blog_detail_img{
+        width: 100%;
     }
     
 }

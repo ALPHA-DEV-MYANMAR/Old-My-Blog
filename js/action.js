@@ -73,4 +73,3 @@ blog_date.innerHTML = `
 function seemore(){
     window.location.href = 'projects.html';
 }
-
