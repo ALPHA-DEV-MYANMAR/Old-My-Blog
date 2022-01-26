@@ -19,9 +19,7 @@ $.getJSON('https://raw.githubusercontent.com/ALPHA-DEV-MYANMAR/MY-BLOG/main/api/
                                     ${el.body}
                                 </div>
                                 <div class=" mt-3">
-                                    <button class=" button-62"">
-                                        seemore
-                                    </button>
+                                    <a href="${el.url}">preview</a>
                                 </div>
                             </div>
                         </figcaption>
