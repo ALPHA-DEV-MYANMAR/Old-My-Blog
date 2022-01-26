@@ -5,5 +5,19 @@
         "title": "Laravel8 Syntax",
         "body": "Laravel8 Syntax များကိုစုစည်းထားေသာ Project ဖြစ်သည်။",
         "url" : "http://aps2.mms-student.online/"
+    },
+    {
+        "id": 2,
+        "image": "https://github.com/ALPHA-DEV-MYANMAR/MY-BLOG/blob/main/api/img/ex%20syntax.png?raw=true",
+        "title": "Exchange Calculator",
+        "body": "Laravel8 Syntax များကိုစုစည်းထားေသာ Project ဖြစ်သည်။",
+        "url" : "https://excalculator.netlify.app"
+    },
+    {
+        "id": 3,
+        "image": "https://github.com/ALPHA-DEV-MYANMAR/MY-BLOG/blob/main/api/img/ex%20syntax.png?raw=true",
+        "title": "Admin Dashboard",
+        "body": "Bootstap5,JQuery,JS များကိုစုစည်းထားေသာ Project ဖြစ်သည်။",
+        "url" : "https://dashboard-pj.netlify.app/dashboard.html"
     }
 ]
